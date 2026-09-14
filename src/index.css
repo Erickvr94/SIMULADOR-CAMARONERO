@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: #070F0D;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #EAF4F1;
+}
+
+/* El mapa Leaflet usa CRS.Simple (plano de planta, no lat/lng real) */
+.leaflet-container {
+  background: #070F0D;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #0F1E1B;
+  color: #EAF4F1;
+  border: 1px solid #1E3733;
+  border-radius: 6px;
+}
+
+.leaflet-popup-tip {
+  background: #0F1E1B;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E3733;
+  border-radius: 4px;
+}
